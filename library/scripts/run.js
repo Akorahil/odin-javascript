@@ -41,7 +41,6 @@ document.addEventListener("click", (event) => {
   if (target !== null) {
     const targetParent = target.parentElement;
     const bookId = targetParent.id;
-    alert(bookId);
     myLibrary.removeElement(bookId);
   }
 });

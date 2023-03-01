@@ -1,0 +1,122 @@
+:root {
+  --light-gray: rgb(20, 19, 19);
+  --medium-gray: rgb(13, 13, 13);
+  --dark-gray: rgb(7, 7, 7);
+
+  --light-blue: #16789e;
+  --medium-blue: #032a3f;
+
+  --pink: #b537f2;
+}
+
+html,
+body {
+  font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  box-sizing: border-box;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding-bottom: 3px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+.subOne {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.subTwo {
+  font-size: 0.6rem;
+  font-weight: normal;
+}
+
+p {
+  font-size: 0.95rem;
+  font-weight: normal;
+  margin-bottom: 2px;
+}
+
+button {
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 110px;
+  height: 40px;
+}
+
+.pad-bottom-eight {
+  padding-bottom: 8px;
+}
+
+.pad-bottom-twelve {
+  padding-bottom: 12px;
+}
+
+svg {
+  fill: currentColor;
+  height: 20px;
+  width: 20px;
+}
+
+.svg-icon {
+  height: 20px;
+  width: 20px;
+}
+
+path {
+  fill: white !important;
+}
+
+button {
+  cursor: pointer;
+  border: 2px solid var(--light-blue);
+  border-radius: 20px;
+  background-color: var(--dark-gray-offset);
+  color: var(--light-blue);
+}
+
+button:hover {
+  border: 2px solid var(--pink);
+  box-shadow: 3px 3px 10px var(--pink);
+}
+
+input[type="text"] {
+  background-color: var(--light-gray);
+  border: 1px solid var(--light-blue);
+  border-radius: 15px;
+  height: 26px;
+  width: 100%;
+  color: white;
+  padding-inline: 5px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: 2px solid var(--pink);
+  box-shadow: 3px 3px 10px var(--pink);
+}
