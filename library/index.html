@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/framework.css" />
+    <link rel="stylesheet" href="./styles/library.css" />
+
+    <script src="./scripts/book.js" defer></script>
+    <script src="./scripts/category.js" defer></script>
+    <script src="./scripts/library.js" defer></script>
+    <script src="./scripts/run.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Page header -->
+      <div class="header">
+        <div class="logo">
+          <object
+            type="image/svg+xml"
+            data="./images/svg/book-open-page-variant.svg"
+            class="svg-icon"
+          ></object>
+          <h1>Library</h1>
+        </div>
+        <ul>
+          <li><h3>Sign In</h3></li>
+        </ul>
+      </div>
+
+      <!-- Data entry sidebar -->
+      <div class="entry">
+        <h3>Add a book:</h3>
+
+        <form class="entry-form" id="entryForm">
+          <label for="Title">
+            <h5>Title:</h5>
+            <input type="text" name="Title" id="Title" />
+          </label>
+          <label for="Author">
+            <h5>Author:</h5>
+            <input type="text" name="Author" id="Author" />
+          </label>
+          <label for="Pages">
+            <h5>Pages:</h5>
+            <input type="text" name="Pages" id="Pages" />
+          </label>
+          <label for="Category">
+            <h5>Category:</h5>
+            <input type="text" name="Category" id="Category" />
+          </label>
+          <div>
+            <h5>Read:</h5>
+            <label for="Read" class="switch">
+              <input type="checkbox" name="Read" id="Read" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <button type="submit">Add</button>
+        </form>
+
+        <!--<h3>Stats:</h3>-->
+      </div>
+
+      <!-- Library cards -->
+      <div class="library" id="myLibrary">
+        <!-- End library -->
+      </div>
+    </div>
+  </body>
+</html>
